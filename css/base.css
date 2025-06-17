@@ -1,0 +1,21 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --rosado-oscuro: #DC3C8B;
+    --fondo-oscuro: #180826;
+    --morado: #8040BF;
+    --rosado-claro: #FDEBEE;
+    --rosado-claro-fuentes: #FDB3BC;
+    --rosado-oscuro: #FD6499;
+    --burdeo: #661A36;
+}
