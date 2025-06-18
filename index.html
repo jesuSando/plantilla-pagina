@@ -1,60 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Mi Sitio Web</title>
 
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
+        <div class="logo">
+            <a href="#">
+                <div class="icon-link"><i class="fas fa-regular fa-feather"></i></div>
+                <div class="nav-link">Novias de<br>Azúcar</div>
+            </a>
+        </div>
         <ul>
-            <li><a href="#portada">Portada</a></li>
-            <li><a href="#seccion1">Sección 1</a></li>
-            <li><a href="#seccion2">Sección 2</a></li>
-            <li><a href="#seccion3">Sección 3</a></li>
-            <li><a href="#seccion4">Sección 4</a></li>
-            <li><a href="#seccion5">Sección 5</a></li>
-            <li><a href="#seccion6">Sección 6</a></li>
+            <li><a href="#portada">
+                    <div class="icon-link">
+                        <i class="fas fa-regular fa-house"></i>
+                    </div>
+                    <div class="nav-link">Portada</div>
+                </a></li>
+            <li><a href="#seccion1"><i class="fa-solid fa-masks-theater"></i>
+                    <div class="nav-link">La<br>Obra</div>
+                </a></li>
+            <li><a href="#seccion2"><i class="fa-solid fa-moon"></i>
+                    <div class="nav-link">El<br>Misterio</div>
+                </a></li>
+            <li><a href="#seccion3"><i class="fa-solid fa-arrows-rotate"></i>
+                    <div class="nav-link">El<br>Proceso</div>
+                </a></li>
+            <li><a href="#seccion4"><i class="fa-solid fa-book"></i>
+                    <div class="nav-link">Reflexiones</div>
+                </a></li>
+            <li><a href="#seccion5"><i class="fa-solid fa-wand-magic-sparkles"></i></i>
+                    <div class="nav-link">Ficha<br>Artística</div>
+                </a></li>
+            <li><a href="#seccion6"><i class="fa-solid fa-building"></i></i>
+                    <div class="nav-link">Teatro<br>Boutique</div>
+                </a></li>
         </ul>
     </nav>
-    
+
     <!-- Secciones -->
     <section id="portada">
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Esta es la portada de mi sitio web. Desplázate hacia abajo para ver las demás secciones.</p>
+        <h1>Novias de Azúcar</h1>
+        <button onclick="location.href='#seccion1'" class="btn btn-rosado">
+            Explorar el Proceso Creativo <i class="fa-solid fa-arrow-down"></i>
+        </button>
     </section>
-    
+
     <section id="seccion1">
-        <h1>Sección 1</h1>
-        <p>Contenido de la primera sección de mi sitio web.</p>
+        <div class="contenedor-seccion1">
+            <div class="izquierda">
+                <h2 class="title-seccion1">Sobre la Obra:<span> Novias de Azúcar</span></h2>
+                <p class="sub-title-seccion1">
+                    Un Viaje entre la Dulzura y el Misterio
+                </p>
+                <div class="descripcion-seccion1">
+                    <p class="texto-seccion1">
+                        La segunda entrega de una trilogía sobre tiendas de misterio, escrita por Sofía Arévalo.
+                        Inspirada
+                        en México, explota la festividad de los muertos, lo dulce y los colores vibrantes.
+                    </p>
+                    <div class="items-descripcion">
+                        <div class="item-card">
+                            <i class="fa-regular fa-map"></i>
+                            <p>Inspiración: Cultura mexicana, festividad de los muertos.</p>
+                        </div>
+                        <div class="item-card">
+                            <i class="fas fa-light fa-palette"></i>
+                            <p>Universo Propio: Ciudades ficticias evocadas.</p>
+                        </div>
+                        <div class="item-card">
+                            <i class="fa-regular fa-star"></i>
+                            <p>Enfoque: Apreciación cultural y realismo mágico.</p>
+                        </div>
+                    </div>
+                    <div class="button-container-seccion1">
+                        <button onclick="location.href=''" class="btn btn-rosado-claro">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Leer Más Detalles
+                        </button>
+                        <button onclick="location.href=''" class="btn btn-claro">
+                            <i class="fa-solid fa-circle-exclamation"></i> Ficha Técnica
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="derecha">
+                <img src="img/image.png" alt="sobre la obra">
+            </div>
+        </div>
+
+
     </section>
-    
+
     <section id="seccion2">
         <h1>Sección 2</h1>
         <p>Contenido de la segunda sección de mi sitio web.</p>
     </section>
-    
+
     <section id="seccion3">
         <h1>Sección 3</h1>
         <p>Contenido de la tercera sección de mi sitio web.</p>
     </section>
-    
+
     <section id="seccion4">
         <h1>Sección 4</h1>
         <p>Contenido de la cuarta sección de mi sitio web.</p>
     </section>
-    
+
     <section id="seccion5">
         <h1>Sección 5</h1>
         <p>Contenido de la quinta sección de mi sitio web.</p>
     </section>
-    
+
     <section id="seccion6">
         <h1>Sección 6</h1>
         <p>Contenido de la sexta sección de mi sitio web.</p>
     </section>
 </body>
+
 </html>

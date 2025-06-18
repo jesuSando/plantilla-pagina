@@ -1,28 +1,52 @@
 @import url(base.css);
 
 nav {
-    background-color: var(--rosado-oscuro);
+    background-color: var(--rosado-claro);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.logo a{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--fondo-oscuro);
+}
+
+.icon-link{
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--fondo-oscuro);
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav ul li a:hover {
