@@ -10,7 +10,7 @@ section {
     background-color: var(--rosado-claro);
 }
 
-.title-section{
+.title-section {
     font-size: 2.5rem;
 }
 
@@ -206,7 +206,7 @@ section {
     color: white;
 }
 
-.contenido-seccion2{
+.contenido-seccion2 {
     display: flex;
     flex-direction: column;
     width: 1000px;
@@ -215,7 +215,7 @@ section {
     align-items: center;
 }
 
-.contenedor-icono-seccion2{
+.contenedor-icono-seccion2 {
     display: flex;
     width: 150px;
     height: 150px;
@@ -228,16 +228,17 @@ section {
     color: var(--morado);
     margin-bottom: 40px;
 }
-.titulo-seccion2{
+
+.titulo-seccion2 {
     color: var(--rosado-mediano);
     margin-bottom: 20px;
 }
 
-.titulo-seccion2 span{
+.titulo-seccion2 span {
     color: var(--morado);
 }
 
-.texto1-seccion2{
+.texto1-seccion2 {
     font-style: italic;
     margin-bottom: 20px;
 }
@@ -245,6 +246,7 @@ section {
 .texto2-seccion2 {
     margin-bottom: 20px;
 }
+
 /*------------------------------------------ seccion 3 ------------------------------------------*/
 
 
@@ -254,7 +256,7 @@ section {
     background-color: #fff;
 }
 
-.contenido-seccion3{
+.contenido-seccion3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,22 +264,26 @@ section {
     width: 1000px;
 }
 
-.fila{
+.fila {
     width: 100%;
     display: flex;
     gap: 50px;
 }
 
 .izquierda-seccion3 {
-  flex: 1.5;
-  display: flex;      
-  flex-direction: column;         /* <-- NECESARIO */
-  align-items: center;         /* centra verticalmente */
-  justify-content: center;     /* centra horizontalmente (si quieres) */
-  text-align: left;            /* opcional, para el texto */
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    /* <-- NECESARIO */
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: center;
+    /* centra horizontalmente (si quieres) */
+    text-align: left;
+    /* opcional, para el texto */
 }
 
-.content-seccion3{
+.content-seccion3 {
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -285,11 +291,11 @@ section {
 }
 
 
-.derecha-seccion3{
+.derecha-seccion3 {
     flex: 1;
 }
 
-.header-seccion3{
+.header-seccion3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,7 +304,7 @@ section {
     width: 650px;
 }
 
-.contenedor-icono-header3{
+.contenedor-icono-header3 {
     display: flex;
     width: 100px;
     height: 100px;
@@ -312,21 +318,22 @@ section {
     margin-bottom: 40px;
 }
 
-.titulo-seccion3{
+.titulo-seccion3 {
     margin-bottom: 20px;
 }
-.titulo-seccion3 span{
+
+.titulo-seccion3 span {
     color: var(--rosado-claro-fuentes);
 }
 
-.header-fila-seccion3{
+.header-fila-seccion3 {
     width: 100%;
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.icono-fila{
+.icono-fila {
     background-color: var(--rosado-claro);
     color: var(--rosado-mediano);
     width: 50px;
@@ -340,39 +347,161 @@ section {
     margin-right: 20px;
 }
 
-.parrafo1-fila-seccion3, .parrafo2-fila-seccion3{
+.parrafo1-fila-seccion3,
+.parrafo2-fila-seccion3 {
     margin: 20px 0;
 }
-.sabermas-fila-seccion3{
+
+.sabermas-fila-seccion3 {
     margin-top: 20px;
     width: 100%;
 }
-.izquierda-seccion3 a{
+
+.izquierda-seccion3 a {
     cursor: pointer;
     text-decoration: none;
     color: var(--rosado-mediano);
     font-weight: bold;
 }
 
-.contenedor-img-fila-seccion3{
+.contenedor-img-fila-seccion3 {
     border: 4px solid var(--rosado-mediano);
     height: 250px;
     overflow: hidden;
     border-radius: 15px;
 }
 
-.contenedor-img-fila-seccion3 img{
+.contenedor-img-fila-seccion3 img {
     width: 100%;
 }
 
-.footer-seccion3{
+.footer-seccion3 {
     margin: 100px 0;
 }
+
 /*------------------------------------------ seccion 4 ------------------------------------------*/
 
 #seccion4 {
-    background-color: #f3e5f5;
+    background-color: #ffffff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
+
+.contenido-seccion4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    width: 1000px;
+}
+
+.header-seccion4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 750px;
+}
+
+.contenedor-icono-header4 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--rosado-claro);
+    border-radius: 50%;
+    font-size: 4.2rem;
+    color: var(--rosado-mediano);
+    margin-bottom: 40px;
+}
+
+.titulo-seccion4 {
+    margin-bottom: 20px;
+}
+
+.titulo-seccion4 span {
+    color: var(--rosado-claro-fuentes);
+}
+
+
+.header-fila-seccion4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.header-fila-seccion4 h3{
+    font-size: 1.5rem;
+}
+
+.fila-seccion4 {
+    display: flex;
+    gap: 30px;
+}
+
+.izquierda-seccion4 {
+    flex: 1;
+}
+
+.derecha-seccion4 {
+    flex: 1.5;
+}
+
+.contenedor-img-fila4 {
+    border: 4px solid var(--rosado-mediano);
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.contenedor-img-fila4 img {
+    width: 100%;
+}
+
+
+.header-fila-seccion4 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.icono-fila-seccion4 {
+    background-color: var(--rosado-claro);
+    color: var(--rosado-mediano);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.textoseccion4{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cita{
+    background-color: var(--rosado-claro);
+    border-left: 3px solid var(--rosado-mediano);
+    padding: 10px 20px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*------------------------------------------ seccion 5 ------------------------------------------*/
+
+
 
 #seccion5 {
     background-color: #e0f7fa;
