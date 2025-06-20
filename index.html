@@ -59,16 +59,30 @@
     <section id="seccion1">
         <div class="contenedor-seccion1">
             <div class="izquierda">
-                <h2 class="title-seccion1">Sobre la Obra:<span> Novias de Azúcar</span></h2>
+                <h2 class="title-seccion1 title-section">Sobre la Obra:<span> Novias de Azúcar</span></h2>
                 <p class="sub-title-seccion1">
                     Un Viaje entre la Dulzura y el Misterio
                 </p>
                 <div class="descripcion-seccion1">
-                    <p class="texto-seccion1">
-                        La segunda entrega de una trilogía sobre tiendas de misterio, escrita por Sofía Arévalo.
-                        Inspirada
-                        en México, explota la festividad de los muertos, lo dulce y los colores vibrantes.
-                    </p>
+                    <div class="descripcion-texto-seccion1">
+                        <p class="texto1-seccion1">
+                            La segunda entrega de una trilogía sobre tiendas de misterio, escrita por Sofía Arévalo.
+                            Inspirada
+                            en México, explota la festividad de los muertos, lo dulce y los colores vibrantes.
+                        </p>
+                        <p class="texto2-seccion1 hidden" id="texto2-seccion1">
+                            Se crea un universo propio con ciudades como Chocolate Caliente y Algodón de Azúcar,
+                            manteniendo
+                            la magia y el misticismo de las tradiciones mexicanas. La obra aborda temas de identidad,
+                            pérdida y la delgada línea entre la vida y la muerte, todo ello envuelto en una estética
+                            visualmente impactante que busca la apreciación cultural cuidadosa, evitando la apropiación.
+                            Es
+                            un drama contemporáneo con fuertes toques de realismo mágico, donde lo cotidiano se
+                            entrelaza
+                            con lo sobrenatural.
+                        </p>
+                    </div>
+
                     <div class="items-descripcion">
                         <div class="item-card">
                             <i class="fa-regular fa-map"></i>
@@ -84,10 +98,10 @@
                         </div>
                     </div>
                     <div class="button-container-seccion1">
-                        <button onclick="location.href=''" class="btn btn-rosado-claro">
+                        <button class="btn btn-rosado-claro" id="btn-mas-seccion1">
                             <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Leer Más Detalles
                         </button>
-                        <button onclick="location.href=''" class="btn btn-claro">
+                        <button class="btn btn-claro" id="btn-ficha-seccion1">
                             <i class="fa-solid fa-circle-exclamation"></i> Ficha Técnica
                         </button>
                     </div>
@@ -95,21 +109,295 @@
 
             </div>
             <div class="derecha">
-                <img src="img/image.png" alt="sobre la obra">
+                <div class="contenedor-imagen-seccion1">
+                    <img src="img/image.png" alt="sobre la obra">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal hidden" id="modal-seccion1">
+            <div class="modal-content">
+                <div class="header-modal1">
+                    <div class="titulo-modal1">
+                        <h2>Ficha técnica: Novias de Azúcar</h2> <br>
+                        <p>Información detallada sobre la producción.</p>
+                    </div>
+                </div>
+                <div class="contenido-modal1">
+                    <p><span>Dramaturgia:</span> Sofía Arévalo</p>
+                    <p><span>Dirección:</span> Pamela Alfaro</p>
+                    <p><span>Elenco:</span> Pamela alfaro, Sofía Arévalo, (otros por confirmar)</p>
+                    <p><span>Diseño Integral:</span> Coti Valdivia</p>
+                    <p><span>Música Original:</span> Tito Velásquez</p>
+                    <p><span>Producción:</span> Alexanddra Ellwanger</p>
+                    <p><span>Compañía:</span> Teatro Boutique</p>
+                </div>
+                <div class="footer-modal1">
+                    <button class="btn btn-rosado" id="close-modal1">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion2">
+        <div class="contenido-seccion2">
+            <div class="contenedor-icono-seccion2">
+                <i class="fas fa-regular fa-ghost"></i>
+            </div>
+            <div class="texto-seccion2">
+                <div class="title-section titulo-seccion2">
+                    <h2>El Misterio de <span>La Pascualita</span></h2>
+                </div>
+                <div class="descripcion-seccion2">
+                    <p class="texto1-seccion2">
+                        Tras la fachada de dulzura, 'Novias de Azúcar' se nutre de una leyenda oscura: La Pascualita, el
+                        enigmático maniquí nupcial de Chihuahua, México. Una historia que congela la sangre.
+                    </p>
+                    <p class="texto2-seccion2">
+                        Este escalofriante misterio añade una capa de profundidad y contraste a la obra, recordándonos
+                        la oscuridad que a veces se oculta tras la belleza.
+                    </p>
+                </div>
+                <div class="button-container-seccion2">
+                    <button class="btn btn-morado" id="btn-mas-seccion1">
+                        <i class="fas fa-regular fa-bolt"></i> Descubrir Más
+                    </button>
+                </div>
             </div>
         </div>
 
 
     </section>
 
-    <section id="seccion2">
-        <h1>Sección 2</h1>
-        <p>Contenido de la segunda sección de mi sitio web.</p>
-    </section>
-
     <section id="seccion3">
-        <h1>Sección 3</h1>
-        <p>Contenido de la tercera sección de mi sitio web.</p>
+        <div class="contenido-seccion3">
+            <div class="header-seccion3">
+                <div class="contenedor-icono-header3">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <h2 class="title-section titulo-seccion3">
+                    El detallado <span>Proceso de Creación</span>
+                </h2>
+                <p>
+                    Sumérgete en las etapas que dieron vida a "Novias de Azúcar", un viaje desde la concepción hasta la
+                    materialización escénica, donde cada detalle cuenta una historia.
+                </p>
+            </div>
+            <div class="content-seccion3">
+                <div class="fila">
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-regular fa-lightbulb"></i>
+                            </div>
+                            <h3>Inspiración y Origen</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            Sofía Arévalo, inspirada por un viaje a México, escribió 'Novias de Azúcar', capturando
+                            la
+                            esencia de la festividad de los muertos.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila1Seccion3">
+                            La trilogía sobre tiendas de misterio ya estaba en mente. Sofía Arévalo, inspirada por un
+                            viaje de investigación a México, escribió 'Novias de Azúcar'. Este viaje fue fundamental
+                            para capturar la esencia de la festividad de los muertos, la dulzura y los colores que
+                            caractrerizan la obra, Se exploraron mitos, tradiciones y la particular relación de México
+                            con la muerte y la celebración.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more-1" id="3seemore1"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <h3>Financiamiento Estratégico</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            Apoyada por FONDART de Creación 2023, Producción 2024 y Creación/Producción 2025.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila2Seccion3">
+                            La visión artística recibió un impulso vital gracias al financiamiento de un proyecto
+                            FONDART de Creación 2023 y un FONDART de Creación y Producción Escénica/Titeres 2024. Este
+                            apoyo continuó con la adjudicación de FONDART de Creación y Producción 2025, asegurando la
+                            continuidad y expansión del proyecto. Estos fondos permitieron una mayor dedicación al
+                            desarrollo escenográfico, vestuario y la investigación profunda de los temas.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more" id="3seemore2"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3>Creación del Mundo Dramático</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            Universo propio con ciudades como Chocolate Caliente y Algodón de Azúcar, nutrido del
+                            misticismo mexicano.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila3Seccion3">
+                            Se construyó un universo particular, con geografías propias como las ciudades de Chocolate
+                            Caliente y Algodón de Azúcar. Aunque ficticio, este mundo se nutre del misticismo y la
+                            estética de las tradiciones mexicanas, abordando siempre desde la apreciación cultural y
+                            evitando la apropiación. Se trabajó en la creación de una mitología interna para este
+                            universo, con sus propias reglas y atmósferas.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more-3" id="3seemore3"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+                            <h3>Diseño de Personajes Específico</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            Sofía Arévalo escribió los personajes pensando en las fortalezas de cada integrante de la
+                            compañía.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila4Seccion3">
+                            Sofía Arévalo, como guinista, no realizó ningun casting tradicional. Escribió los personajes
+                            pensando específicamente en las fortalezas, matices y características únicas de cada
+                            integrante de la compañía, buscando una sinergia natural desde el texto. Este enfoque
+                            permitió que las actrices se conectaran profundamente con sus roles desde las primeras
+                            etapas del proceso creativo.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more" id="3seemore4"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h3>Ensayos: Un Laboratorio Vivo</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            Metodología orgánica y experimental, donde objetos y diálogos evolucionan con el público.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila5Seccion3">
+                            La metodología de ensayos fue orgánica y experimental. Los objetos no eran meros accesorios;
+                            iban adquiriendo roles y signiificados a medida que se le incorporaban en las escenas.
+                            Muchos dialogos y acciones se pulieron y transformaron con la respuesta del público en las
+                            primeras funciones, en un proceso de constante evolución. Se fomentó la imporvisación
+                            controlada y la exploración física y vocal.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more-3" id="3seemore5"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="derecha-seccion3">
+                        <div class="contenedor-img-fila-seccion3">
+                            <img src="img/image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="izquierda-seccion3">
+                        <div class="header-fila-seccion3">
+                            <div class="icono-fila">
+                                <i class="fa-solid fa-cube"></i>
+                            </div>
+                            <h3>El Objeto como Protagonista</h3>
+                        </div>
+
+                        <p class="parrafo1-fila-seccion3">
+                            El teatro objetual es pilar fundamental, con objetos y escenografía como personajes
+                            dinámicos.
+                        </p>
+                        <p class="hidden parrafo2-fila-seccion3" id="textoFila6Seccion3">
+                            El teatro objetual es un pilar fundamental. Los objetos y la escenografía trascieden su
+                            función utilitaria para convertirse en personajes dinámicos. Esta aproximación permite
+                            explorar nuevas formas de narrar y conectar con el público, diferenciando a Teatro Boutique
+                            de propuestas más convencionales. Se integró la materialidad y la poética de cada objeto
+                            seleccionada para la puesta en escena.
+                        </p>
+
+
+                        <div class="sabermas-fila-seccion3">
+                            <a class="3-see-more" id="3seemore6"><i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber más</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-seccion3">
+                <button class="btn btn-rosado-claro" id="btnGaleriaSeccion3">
+                    Ver Galería del Proceso Creativo <i class="fa-solid fa-signs-post"></i>
+                </button>
+            </div>
+        </div>
     </section>
 
     <section id="seccion4">
@@ -127,5 +415,6 @@
         <p>Contenido de la sexta sección de mi sitio web.</p>
     </section>
 </body>
+<script src="js/funciones.js"></script>
 
 </html>
