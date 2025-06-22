@@ -141,3 +141,57 @@ botonVerMas6.addEventListener("click", (e) => {
 });
 
 //-----------------------------------------------------------seccion4-----------------------------------------------------------
+
+const botonVerMas7 = document.getElementById("4seemore1");
+const textoFila7 = document.getElementById("textoFila1Seccion4");
+const cita1 = document.getElementById("cita1");
+
+const botonVerMas8 = document.getElementById("4seemore2");
+const textoFila8 = document.getElementById("textoFila2Seccion4");
+const cita2 = document.getElementById("cita2");
+
+const botonVerMas9 = document.getElementById("4seemore3");
+const textoFila9 = document.getElementById("textoFila3Seccion4");
+const cita3 = document.getElementById("cita3");
+
+botonVerMas7.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if ( textoFila7.classList.contains("hidden")) {
+        textoFila7.classList.remove("hidden");
+        cita1.classList.remove("hidden");
+        botonVerMas7.innerHTML = '<i class="fa-solid fa-down-left-and-up-right-to-center"></i> Ver Menos'
+    } else {
+        textoFila7.classList.add("hidden");
+        cita1.classList.add("hidden");
+        botonVerMas7.innerHTML = '<i class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber Más'  
+    }
+});
+
+botonVerMas8.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if ( textoFila8.classList.contains("hidden")) {
+        textoFila8.classList.remove("hidden");
+        cita2.classList.remove("hidden");
+        botonVerMas8.innerHTML = '<i class="fa-solid fa-down-left-and-up-right-to-center"></i> Ver Menos'
+    } else {
+        textoFila8.classList.add("hidden");
+        cita2.classList.add("hidden");
+        botonVerMas8.innerHTML = '<i class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber Más'  
+    }
+});
+
+botonVerMas9.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if ( textoFila9.classList.contains("hidden")) {
+        textoFila9.classList.remove("hidden");
+        cita3.classList.remove("hidden");
+        botonVerMas9.innerHTML = '<i class="fa-solid fa-down-left-and-up-right-to-center"></i> Ver Menos'
+    } else {
+        textoFila9.classList.add("hidden");
+        cita3.classList.add("hidden");
+        botonVerMas9.innerHTML = '<i class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber Más'  
+    }
+});

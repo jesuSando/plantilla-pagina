@@ -38,6 +38,12 @@ html, body {
     border: 3px solid var(--rosado-mediano);
 }
 
+.btn-rosado-oscuro{
+    background: var(--rosado-oscuro);
+    border: 3px solid var(--rosado-oscuro);
+    color: white;
+}
+
 .btn-claro{
     background: var(--rosado-claro);
     border: 3px solid var(--rosado-mediano);
@@ -56,6 +62,30 @@ html, body {
     border-radius: 12px;
 }
 
+
+/*------------------------------------------ condicionales ------------------------------------------*/
+
 .hidden {
     display: none;
+}
+
+/* Agrega esto a tu CSS */
+body.section2-active section:not(#seccion2) {
+    background-color: var(--burdeo);
+}
+
+
+section {
+    transition: background-color 0.5s ease;
+}
+
+
+nav {
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav.escondido {
+    transform: translateY(-100%);
+    opacity: 0; /* Hace que desaparezca suavemente */
 }
