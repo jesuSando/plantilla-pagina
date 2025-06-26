@@ -1,16 +1,17 @@
-/* Estilos generales */
-* {
+.fuente-formal {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
-html, body {
-    scroll-behavior: smooth;
-}
-
-:root{
+:root {
     --rosado-oscuro: #DC3C8B;
     --fondo-oscuro: #180826;
     --morado: #8040BF;
@@ -18,9 +19,11 @@ html, body {
     --rosado-claro-fuentes: #FDB3BC;
     --rosado-mediano: #FD6499;
     --burdeo: #661A36;
+    --fondo1: #FFE5E8;
+    --fondo2: #b96975;
 }
 
-.btn{
+.btn {
     padding: 10px 40px;
     border-radius: 50px;
     border: none;
@@ -33,25 +36,25 @@ html, body {
     opacity: 0.5;
 }
 
-.btn-rosado{
+.btn-rosado {
     background: var(--rosado-mediano);
     border: 3px solid var(--rosado-mediano);
 }
 
-.btn-rosado-oscuro{
+.btn-rosado-oscuro {
     background: var(--rosado-oscuro);
     border: 3px solid var(--rosado-oscuro);
     color: white;
 }
 
-.btn-claro{
+.btn-claro {
     background: var(--rosado-claro);
     border: 3px solid var(--rosado-mediano);
     color: var(--rosado-mediano);
 }
 
-.btn-rosado-claro{
-    background: var(--rosado-claro-fuentes);
+.btn-rosado-claro {
+    background: #fcc0c5;
     border: 3px solid var(--rosado-claro-fuentes);
 }
 
@@ -62,6 +65,9 @@ html, body {
     border-radius: 12px;
 }
 
+.btn-degradado{
+    background: linear-gradient(to right, #cce7ea, #d4b3f7, #FDB3BC);
+}
 
 /*------------------------------------------ condicionales ------------------------------------------*/
 
@@ -87,5 +93,17 @@ nav {
 
 nav.escondido {
     transform: translateY(-100%);
-    opacity: 0; /* Hace que desaparezca suavemente */
+    opacity: 0;
+    /* Hace que desaparezca suavemente */
+}
+
+.texto-degradado {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, #cce7ea, #d4b3f7, #FDB3BC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Firefox compatibility */
+    background-clip: text;
+    color: transparent;
 }

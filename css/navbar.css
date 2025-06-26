@@ -1,7 +1,6 @@
 @import url(base.css);
 
 nav {
-    background-color: var(--rosado-claro);
     position: fixed;
     width: 100%;
     top: 0;

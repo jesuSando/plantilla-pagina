@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
         } else {
             // Cuando la sección 2 no está visible
             body.classList.remove('section2-active');
-            navbar.style.backgroundColor = 'var(--rosado-claro)';
+            navbar.style.backgroundColor = '#fcc0c5';
         }
     });
 }, {
