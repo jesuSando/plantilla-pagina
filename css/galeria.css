@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color:  #fff6ea;
+}
+
+.contenedor-fotos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contenedor-foto{
+    width: 80%;
+}
+.contenedor-foto img{
+    width: 100%;
+    height: auto;
+}

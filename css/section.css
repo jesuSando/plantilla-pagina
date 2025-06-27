@@ -10,10 +10,17 @@ section {
     background-color: var(--rosado-claro);
 }
 
+p {
+    font-size: 1.3rem
+}
+
+h3 {
+    font-size: 1.7rem
+}
 
 
 .title-section {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 /* Colores de secciones */
@@ -65,6 +72,13 @@ section {
     justify-content: flex-start;
 }
 
+#seccion1 h2 {
+    font-size: 2.5rem;
+}
+
+#seccion1 p {
+    font-size: 1rem;
+}
 .contenedor-seccion1 {
     display: flex;
     justify-content: center;
@@ -255,12 +269,12 @@ section {
     border-radius: 50%;
     font-size: 5rem;
     color: var(--morado);
-    margin-bottom: 40px;
 }
 
 .titulo-seccion2 {
     color: var(--rosado-mediano);
     margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .titulo-seccion2 span {
@@ -270,10 +284,55 @@ section {
 .texto1-seccion2 {
     font-style: italic;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .texto2-seccion2 {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    font-size: 1.5rem;
+}
+
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    /* aplica el desenfoque */
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el modal */
+.modal2.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contenido del modal */
+.modal-content2 {
+    background-color: var(--fondo-oscuro);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    border: 2px solid var(--rosado-mediano);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 0.4s ease;
+    text-align: left;
+}
+
+.footer-modal2 p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*------------------------------------------ seccion 3 ------------------------------------------*/
@@ -332,7 +391,11 @@ section {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 650px;
+    width: 100%;
+}
+
+.header-seccion3 p{
+    font-size: 1.3rem;
 }
 
 .contenedor-icono-header3 img {
@@ -347,6 +410,7 @@ section {
 
 .titulo-seccion3 {
     margin-bottom: 20px;
+    font-size: 3.5rem;
 }
 
 .titulo-seccion3 span {
@@ -584,7 +648,9 @@ section {
 /*------------------------------------------ seccion 5 ------------------------------------------*/
 
 
-
+#seccion5{
+    padding: 80px 100px 0 100px;
+}
 
 .contenido-seccion5 {
     backdrop-filter: blur(8px);
@@ -610,6 +676,7 @@ section {
 .titulo-seccion5 {
     display: flex;
     gap: 20px;
+    font-size: 3rem;
 }
 
 .titulo-seccion5 span {
@@ -626,16 +693,12 @@ section {
 
 .parrilla-cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
 
 .card-container {
     text-align: center;
-    flex: 0 0 calc((100% - 4rem) / 3);
-    /* 3 por fila, restando el gap */
-    max-width: calc((100% - 4rem) / 3);
 }
 
 .photo-frame {
@@ -721,7 +784,7 @@ section {
 }
 
 .contenido-seccion6 {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -760,8 +823,9 @@ section {
 .group-cards {
     display: flex;
     margin-top: 100px;
-    width: 80%;
-    gap: 50px;
+    width: 100%;
+    gap: 100px;
+    justify-content: space-between;
 }
 
 .card-section6 {
@@ -789,8 +853,9 @@ section {
 }
 
 .footer-seccion6 {
-    width: 50%;
-    margin-bottom: 50px;
+    width: 70%;
+    margin: 100px 0 50px 0;
+
 }
 
 /*------------------------------------------ footer ------------------------------------------*/
@@ -873,4 +938,9 @@ section {
     border-top: 2px solid var(--rosado-claro);
     padding: 20px;
     text-align: center;
+}
+
+.footer-texto2 p{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
 }

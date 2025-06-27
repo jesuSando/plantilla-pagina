@@ -46,6 +46,30 @@ window.addEventListener("click", (e) => {
 });
 
 
+const modal2 = document.getElementById("modal-seccion2");
+const openBtn2 = document.getElementById("btn-mas-seccion2");
+const closeBtn2 = document.getElementById("close-modal2");
+
+openBtn2.addEventListener("click", () => {
+  modal2.classList.remove("hidden");
+  modal2.classList.add("show");
+  console.log("Modal 2 mostrado correctamente");
+});
+
+closeBtn2.addEventListener("click", () => {
+  modal2.classList.remove("show");
+  setTimeout(() => modal2.classList.add("hidden"), 300); // espera transición
+  console.log("Modal 2 cerrado correctamente");
+});
+
+// Cierra al hacer clic fuera del contenido
+window.addEventListener("click", (e) => {
+  if (e.target === modal2) {
+    modal.classList.remove("show");
+    setTimeout(() => modal2.classList.add("hidden"), 300);
+  }
+});
+
 
 //-----------------------------------------------------------seccion3-----------------------------------------------------------
 
