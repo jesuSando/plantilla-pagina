@@ -6,23 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galería</title>
   <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
   <div class="contenedor-fotos">
-    <div class="contenedor-foto">
+    <div class="contenedor-foto" data-animate>
       <img src="img/hbhb.png" alt="">
     </div>
-    <div class="contenedor-foto2">
+    <div class="contenedor-foto" data-animate>
       <img src="img/inkjjnok.png" alt="">
     </div>
-    <div class="contenedor-foto">
+    <div class="contenedor-foto" data-animate>
       <img src="img/jbkjbkjb.png" alt="">
     </div>
-    <div class="contenedor-foto">
+    <div class="contenedor-foto" data-animate>
       <img src="img/jkbhjli.png" alt="">
     </div>
   </div>
 </body>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const elementos = document.querySelectorAll("[data-animate]");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // solo animar una vez
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    elementos.forEach(el => observer.observe(el));
+
+    console.log("Animaciones activadas");
+    console.log("Elementos detectados:", elementos.length);
+
+  });
+</script>
 
 </html>

@@ -219,3 +219,26 @@ botonVerMas9.addEventListener("click", (e) => {
         botonVerMas9.innerHTML = '<i class="fa-solid fa-up-right-and-down-left-from-center"></i> Saber Más'  
     }
 });
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const elementos = document.querySelectorAll("[data-animate]");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // solo animar una vez
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elementos.forEach(el => observer.observe(el));
+  
+console.log("Animaciones activadas");
+console.log("Elementos detectados:", elementos.length);
+
+});
